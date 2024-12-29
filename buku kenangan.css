@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.upload-area {
+    margin-bottom: 20px;
+}
+
+#mediaContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.media-item {
+    width: 150px;
+    margin: 10px;
+    position: relative;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.media-item.selected {
+    border-color: blue; /* Warna border untuk item yang dipilih */
+}
+
+.media-item img, .media-item video {
+    width: 100%;
+    height: auto;
+}
+
+.description {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.date {
+    text-align: center;
+    font-size: 12px;
+    color: gray;
+}
+input[type='file'] {
+    background-color: green;
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 40%;
+    cursor: pointer;
+}
+input[type='text'] {
+    border-radius: 5px;
+    height: 30px;
+    width: 45%;
+    border: 3px solid black;
+}
+button {
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 25%;
+    height: 40px;
+    background-color: rgb(42, 155, 42);
+    box-shadow: 4px 10px 10px black;
+    cursor: pointer;
+}
+button:hover {
+    background-color: rgb(52, 128, 52);
+    box-shadow: 4px 10px 10px rgb(114, 113, 113);
+}
+p a {
+    text-decoration: none;
+}
+p a:hover {
+    text-decoration: underline;
+    color: red;
+}
+.photo-item .description {
+    margin-top: 10px; /* Jarak antara gambar dan deskripsi */
+    background-color: gray; /* Warna latar belakang abu-abu */
+    color: white; /* Warna teks putih untuk kontras */
+    padding: 5px; /* Jarak dalam deskripsi */
+    border-radius: 3px; /* Sudut membulat untuk deskripsi */
+    margin-bottom: 2px; /* Jarak antara deskripsi dan tanggal */
+}
+.photo-item .date {
+    font-size: 0.9em; /* Ukuran font lebih kecil untuk tanggal */
+    color: gray; /* Warna abu-abu untuk tanggal */
+}
+.photo-item img {
+    max-width: 50%;
+    margin-right: 10px;
+}
+.photo-item button {
+    position: absolute; /* Mengatur posisi tombol */
+    right: 0; /* Menempatkan tombol di sebelah kanan */
+    margin-top: 5px; /* Jarak antara deskripsi/tanggal dan tombol */
+}
+.photo-item.selected {
+    border: 2px solid red; /* Border merah saat foto dipilih */
+    padding: 5px; /* Jarak antara border dan konten */
+    cursor: pointer;
+}
